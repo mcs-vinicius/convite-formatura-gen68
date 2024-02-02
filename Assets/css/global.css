@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Overlock+SC&family=Rajdhani:wght@300&display=swap');
+@font-face {
+  font-family: Shutterlocks;
+  src: url(../font/Shutterlocks.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Dosis';
+}
+
+body {
+  background: linear-gradient(-45deg, #931bc6, #ff218c, #36a9e1);
+  background-size: 400% 400%;
+  animation: gradient 6s ease-in infinite alternate;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #871bc6bd;
+  padding: 20px;
+  position: fixed;
+  z-index: 50;
+}
+
+.gen {
+  padding-left: 5%;
+}
+
+.container-nav div a {
+  width: 10%;
+  font-family: Shutterlocks;
+}
+
+.container-nav nav {
+  padding-top: 10px;
+}
+
+.container-nav {
+  z-index: 50;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 5%;
+}
+
+.container-nav nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: Dosis;
+}
+
+.menu_lista {
+  gap: 4%;
+}
+
+.container-nav nav ul li {
+  text-decoration: none;
+  list-style: none;
+  font-family: Dosis;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+header .menu_lista a {
+  font-size: 15px;
+  font-weight: 900;
+  text-decoration: none;
+  color: rgb(207, 200, 200);
+  padding: 3px 10px 3px 10px;
+  border-radius: 10px 2px 5px 2px;
+  border: 2px solid;
+  font-family: Dosis;
+}
+
+header nav a:hover {
+  background-color: #562274;
+  color: rgb(255, 249, 249);
+  transition: background 2.5s, outline 1s, transform 2s;
+}
+
+footer {
+  text-align: center;
+  width: 100%;
+  height: 150px;
+  background-color: #000000bb;
+}
+
+footer span {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+footer a {
+  text-decoration: none;
+}
+footer h4 {
+  padding-top: 20px;
+  color: white;
+  font-size: x-large;
+}
+
+/* Botão Generation */
+.button-gen {
+  position: relative;
+  border: none;
+  background: transparent;
+  --stroke-color: #ffffff7c;
+  --ani-color: rgb(95, 3, 244);
+  --color-gar: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  letter-spacing: 3px;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--stroke-color);
+  cursor: pointer;
+}
+
+.button-gen a span {
+  font-family: 'Shutterlocks';
+}
+
+.front-textt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  background: var(--color-gar);
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: 200%;
+  overflow: hidden;
+  transition: all 1s;
+  animation: 8s ani infinite;
+  border-bottom: 2px solid transparent;
+}
+
+.button-gen:hover .front-textt {
+  width: 100%;
+  border-bottom: 2px solid #0592d3;
+  -webkit-text-stroke: 2px var(--ani-color);
+  padding-top: 3px;
+}
+
+@keyframes ani {
+  0% {
+    background-position: 0%;
+  }
+
+  50% {
+    background-position: 400%;
+  }
+
+  100% {
+    background-position: 0%;
+  }
+}
