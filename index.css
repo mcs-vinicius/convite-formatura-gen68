@@ -286,8 +286,8 @@ button:hover .icon-3 {
 
 @media screen and (max-width: 992px) {
   main {
-    width: 98vw;
-    height: 98vh;
+    width: 100vw;
+    height: 100vh;
   }
   #main-container,
   #paragraph {
@@ -330,7 +330,12 @@ button:hover .icon-3 {
     text-shadow: var(--amarelo) 2px 0.1rem;
     text-shadow: 2px  3px 2px black;
   }
-  
+
+  main {
+    width: 100vw;
+    height: 100vh;
+  }
+
   #btn-1 span {
     font-size: 13px;
     
@@ -353,6 +358,12 @@ button:hover .icon-3 {
     text-shadow: var(--amarelo) 2px 0.1rem;
     text-shadow: 2px  3px 2px black;
   }
+
+  main {
+    width: 100vw;
+    height: 100vh;
+  }
+
   .subtitle{
     font-size: 1.7rem;
   }
@@ -379,6 +390,12 @@ button:hover .icon-3 {
     text-shadow: var(--amarelo) 2px 0.1rem;
     text-shadow: 2px  3px 2px black;
   }
+
+  main {
+    width: 100vw;
+    height: 100vh;
+  }
+
   .subtitle{
     font-size: 30px;
   }
